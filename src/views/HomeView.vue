@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid" id="gradient">
             <div class="container__item landing-page-container">
                 <div class="content__wrapper">
 
@@ -8,7 +8,7 @@
 
                     </header>
 
-                    <div class="ellipses-container-fluid">
+                    <div class="ellipses-container">
 
                         <h2 class="greeting">Welcome<br> to my <em>Portfolio</em></h2>
 
@@ -32,22 +32,74 @@
                 </div>
 
             </div>
-
         </div>
 </template>
 
 <script>
-// @ is an alias to /src
+
 
 export default {
   name: 'HomeView',
   components: {
     
-  }
-}
+  },
+  mounted() {
+    var colors = [
+      [251, 243, 246],
+      [200, 220, 208],
+      [111, 123, 140],
+      [244, 226, 156],
+      [141, 158, 170]
+    ];
+
+    var step = 0;
+    var colorIndices = [0, 1, 2, 3];
+    var gradientSpeed = 0.015;
+
+    function updateGradient() {
+      var c0_0 = colors[colorIndices[0]];
+      var c0_1 = colors[colorIndices[1]];
+      var c1_0 = colors[colorIndices[2]];
+      var c1_1 = colors[colorIndices[3]];
+
+      var istep = 1 - step;
+      var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
+      var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
+      var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
+      var color1 = "#" + ((r1 << 16) | (g1 << 8) | b1).toString(16);
+
+      var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
+      var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
+      var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
+      var color2 = "#" + ((r2 << 16) | (g2 << 8) | b2).toString(16);
+
+      document.getElementById('gradient').style.background = `-webkit-radial-gradient(center, circle cover, ${color1},${color2})`;
+
+      step += gradientSpeed;
+      if (step >= 1) {
+        step %= 1;
+        colorIndices[0] = colorIndices[1];
+        colorIndices[2] = colorIndices[3];
+
+        colorIndices[1] = (colorIndices[1] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
+        colorIndices[3] = (colorIndices[3] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
+      }
+    }
+
+    setInterval(updateGradient, 10);
+
+    document.body.style.margin = '0';
+    document.body.style.height = '100vh';
+    document.documentElement.style.height = '100vh';
+  },
+};
+
+
 </script>
 
 <style scoped>
+az
+
 /* Color variables */
 :root {
   --tiber: #09383E;
@@ -57,7 +109,7 @@ export default {
 
 /* rem font sizing. */
 h1 {
-  font-size: 2.4rem; /* =24px */
+  font-size: 2.4rem; 
 }
 
 .container__item {
@@ -151,7 +203,9 @@ h1 {
   top: -0.65rem;
   left: -5.05rem;
 }
+ 
 
+/*the circle that is rotating */
 .ellipses {
   border-radius: 50%;
   position: absolute;
@@ -233,14 +287,6 @@ h1 {
   overflow: hidden;
 }
 
-.page-title {
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 0.5rem;
-  display: inline-block;
-  float: left;
-  margin-top: 1rem;
-}
-
 .timeline {
   width: 1.5rem;
   height: 9rem;
@@ -296,23 +342,45 @@ h1 {
   }
 }
 
+/* the background img */
+template{
+	background-color: #000000;
+  padding: 0px;
+  margin: 0px;
+  color: black;
+ }
+
+#gradient
+{
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: inset 0 0 200px hsla(0,0%,0%,.4);
+
+}
+
+h1 {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  font-family: 'Croissant One', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1.25em;
+  color: #2d2d2d;
+}
+h1 span {
+  display: inline-block;
+  border-top: 1px solid #2d2d2d;
+  border-bottom: 1px solid #2d2d2d;
+  padding: .5em .6em;
+}
+
+
+
 /* the media query for  the responsives */
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-  }
 
-@media (max-width: 768px) {
-    /* Add styles for screens with a maximum width of 768px (e.g., tablets) */
-    .container {
-      padding: 10px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .greeting {
-      font-size: 1.5em;
-    }
-  }
 </style>
