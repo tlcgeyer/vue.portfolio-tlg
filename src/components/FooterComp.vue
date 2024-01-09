@@ -1,7 +1,7 @@
 <!--Footer-->
 <template> 
     <div class="container">
-        <div class="row sticky-bottom">
+        <div class="row justify-content-center sticky-lg-bottom">
             <p class="lead">
                 tlgc CopyRights&copy; 
                 <span>{{ currYear }}</span>
