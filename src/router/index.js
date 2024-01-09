@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue';
-import ReachMeView from '../views/ReachMeView.vue';
-Vue.use(VueRouter);
+
 
 const routes = [
   {
