@@ -2,16 +2,19 @@
 
 <template>
   <div>
-    <h1>Contact Us</h1>
+    <div class=" d-flex justify-content-center">
+          <h1>Reach Me</h1>
+    </div>
+
     <form @submit.prevent="submitForm">
       <label for="name">Name:</label>
-      <input type="text" v-model="name" required />
+      <input type="text" placeholder="enter your name..." v-model="name" required />
 
       <label for="email">Email:</label>
-      <input type="email" v-model="email" required />
+      <input type="email"  placeholder="enter your email..."   v-model="email" required />
 
       <label for="message">Message:</label>
-      <textarea v-model="message" required></textarea>
+      <textarea v-model="message" placeholder="enter your message..." required></textarea>
 
       <button type="submit">Submit</button>
     </form>
@@ -31,7 +34,7 @@ export default {
     async submitForm() {
       try {
         const response = await this.$axios.post(
-          '', //sit die formspree dokument hierso
+          'https://formspree.io/f/xpzvzvbg', 
           `name=${encodeURIComponent(this.name)}&email=${encodeURIComponent(
             this.email
           )}&message=${encodeURIComponent(this.message)}`,
