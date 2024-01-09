@@ -1,10 +1,11 @@
 <!--Footer-->
 <template> 
-    <div class="container">
-        <div class="row justify-content-center sticky-lg-bottom">
+    <div class="container-fluid d-flex justify-content-center fixed-bottom" id="footer" >
+        <div class="row">
             <p class="lead">
-                tlgc CopyRights&copy; 
-                <span>{{ currYear }}</span>
+                Tamlin Leigh Geyer <br> All Rights Reserved&copy; <br>
+                <span>{{ currYear }}</span> <br>
+                <!--Do not forget to add insta,github,indeed,facebook-->
             </p>
         </div>
     </div>
@@ -22,5 +23,10 @@
 </script>
 
 <style scoped>
-
+#footer {
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    
+}
 </style>
