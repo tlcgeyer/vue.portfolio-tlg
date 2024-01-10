@@ -8,7 +8,7 @@
 
                     </header>
 
-                    <div class="ellipses-container">
+                    <div class="ellipses-container-fluid">
 
                         <h2 class="greeting">Welcome<br> to my <em>Portfolio</em></h2>
 
@@ -157,7 +157,7 @@ h1 {
 
 .coords {
   font-size: 1rem;
-  color: darkblue;
+  color: darkblue ;  
   display: inline-block;
   transform: rotate(-90deg) translateY(50%);
   float: left;
@@ -183,6 +183,7 @@ h1 {
   left: 13rem;
   right: 0;
   margin: 0 auto;
+  padding-top: 10%;
   text-transform: uppercase;
   letter-spacing: 2rem;
   font-size: 2.2rem;
