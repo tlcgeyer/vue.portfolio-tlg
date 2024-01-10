@@ -1,6 +1,6 @@
 <template>
   <NavBar></NavBar>
-  <main class="container">
+  <main>
     <router-view/>
   </main>
   <FooterComp></FooterComp>
