@@ -2,6 +2,8 @@
     <div>
       <h2 class="display-2">Education</h2>
     </div>
+
+    <p>woebhd vjkwqihoubeihkd nsm</p>
     <!--Education cards-->
  
    <!-- <div class="education" v-if="$store.state.education">
@@ -36,3 +38,8 @@
           }
       }
   </script>
+
+  <style>
+
+
+  </style>
