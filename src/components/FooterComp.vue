@@ -3,7 +3,7 @@
     <div class="container-fluid d-flex justify-content-center fixed-bottom" id="footer" >
         <div class="row">
             <p class="lead">
-                Tamlin Leigh Geyer <br> All Rights Reserved&copy; <br>
+                tlgc  All Rights Reserved&copy; 
                 <span>{{ currYear }}</span> <br>
                 <!--Do not forget to add insta,github,indeed,facebook-->
             </p>
@@ -27,6 +27,7 @@
     background-color: black;
     color: white;
     font-weight: 400;
+    display: flex;
     
 }
 </style>
