@@ -1,4 +1,5 @@
-<template>
+<template> 
+<!--img-->
   <div class="container-fluid" id="gradient">
             <div class="container__item landing-page-container">
                 <div class="content__wrapper">

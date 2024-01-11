@@ -1,5 +1,7 @@
 <template> 
-    
+    <div>
+      <h2 class="display-2">Education</h2>
+    </div>
     <!--Education cards-->
  
    <!-- <div class="education" v-if="$store.state.education">

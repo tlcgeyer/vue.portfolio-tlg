@@ -36,12 +36,12 @@ export default createStore({
       context.commit('setSkills', skills) //you change something and need to save it permanently
       
     },
-    async fetchProjects() {
+    async fetchProjects(context) {
       let res = await fetch(dataUrl)
       let {projects} = await res.json()
       context.commit('setProjects',projects)
     },
-    async fetchTestimonials() {
+    async fetchTestimonials(context) {
       let res = await fetch(dataUrl)
       let {testimonials} = await res.json()
       context.commit('setTestimonials',testimonials)
