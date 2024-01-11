@@ -1,26 +1,41 @@
 <template>
     <div class="container" id="about">
-      <h2  class="justify-content-center d-flex"  id="aboutMe"><span>About me</span></h2>
-            <div class="row">
-                <div class="pBorder">
-                    <p>I'm a 19 year old from Cape Town, South Africa.
-                    I'm an aspiring full-stack developer who found an interest in coding through games specifically Genshin Impact. 
-                    Seeing all these games inspired me to want to make me want to develop my own. I'm abit of a perfectionist when it
-                    comes to certain designs but I do not see that as a weakness but a strength. 
-                </p>
-                </div><br>
+      <h2  class="justify-content-center d-flex"  id="aboutMe"><span>About me</span></h2> <br><br>
                 
+            <div class="row d-flex"> <br>
+              <div class="col w-80 my-5">
+                <!--img-->
+                <div class="justify-content-center d-flex">
+                    <img src="https://i.postimg.cc/Njq0m4bN/20240110-121622-1.jpg" alt="me" lazy="loading" class="rounded-circle my-img">
+                </div> <br><br>
                 <div class="pBorder">
-                    <p>In my free time I do enjoy learning about other programming languages, reading web novels, listening to music 
-                    and a walk on the weekends with my dogs. I do exploring nature because it gives me a sense of inspiration when 
-                    it comes to designing.
+                    <p>I originate from Cape Town, South Africa.
+                    I'm an aspiring full-stack developer who found an interest in coding through games specifically Genshin Impact. Seeing all these games inspired me to want to make me want to develop my own. I'm a bit of a perfectionist when it comes to certain designs but I do not see that as a picky but a just specific as how I envision my outcome to blend and look like. 
+                    <br>
+                    I have the utmost confidence in my ability to succeed in the fast-paced world of technology. My creativity thrives on diversity, allowing me to adapt to new challenges and situations with ease. Despite being a self-taught programmer, I have managed to carve out a niche for myself in the industry and contribute effectively to team projects.
+                    <br>
+                    In addition to my technical skills, I am an avid problem solver who thrives in pressure situations. I believe in the power of collaboration and always look for opportunities to learn from my peers. I am constantly refining my skills and seeking new challenges to further my knowledge and expertise.
+                    <br>
+                    As an ambitious individual with a strong passion for creating my own games, I am eager to take on new opportunities that will enable me to apply my skills and knowledge to real-world projects. I am excited about the possibility of joining a high-class, in-demand software company where I can further enhance my abilities and contribute to the growth and success of the company.
+                    <br>
+                    Overall, I am confident that my free-spirited yet dedicated approach to work, combined with my unwavering commitment to personal and professional growth, will make me a valuable asset to any team.
                     </p>
-                </div> <br>
-
-                <div>
-                    <img src="https://i.postimg.cc/d1HF3p7y/IMG-20231102-WA0036.jpg" alt="me" lazy="loading" class="rounded-circle my-img">
-                </div>
+                </div> 
             </div>
+
+            <div class="col w-10">
+              <div class="pBorder">
+                <p class="justify-content-center d-flex" id="hob">Hobbies</p> <br>
+                <p>
+                  <ul class="justify-content-center d-flex">
+                    <li>
+                      📖
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
     </div>
 
     <!-- Thinking of adding more on the about page about my hobbies, talents, what is tend to do in my free time like baking, reading etc. Mention favorite authors and top 3 books I like to read. Make it on the left side so the about is on the right with the necessary info. Where to add picture.. -->
@@ -35,6 +50,11 @@
 </script>
 
 <style scope>
+
+#hob {
+  font-weight: 400;
+}
+
 #aboutMe {
   padding-top: 1.7rem;
   font-weight: 400;
