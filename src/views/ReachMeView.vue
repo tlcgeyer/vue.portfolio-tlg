@@ -24,21 +24,21 @@
       <!-- Right Column - Contact Form -->
       <div class="col-md-6">
         <br> <br> <br>
-        <form @submit.prevent="submitForm" action="https://formspree.io/f/mzbnzedz" method="POST" class="contact-form">
+        <form @submit.prevent="submitForm" action="https://formspree.io/f/mzbnzedz" method="post" class="contact-form">
           <div class="mb-3">
             <label for="name" class="form-label">Name:</label>
-            <input type="text" id="name" v-model="name" class="form-control" required>
+            <input type="text" id="name" placeholder="Your Name..." v-model="name" class="form-control" required>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email:</label>
-            <input type="email" id="email" v-model="email" class="form-control" required>
+            <input type="email" id="email" placeholder="Your Email..."  v-model="email" class="form-control" required>
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message:</label>
-            <textarea id="message" v-model="message" class="form-control" rows="4" required></textarea>
+            <textarea id="message" placeholder="Your Message..."   v-model="message" class="form-control" rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form> <br> <br> <br> <br>
+          <button type="submit" class="btn btn-primary "  placeholder="Your Function">Send Message</button>
+        </form> 
 
       </div>
     </div>
@@ -63,6 +63,7 @@ export default {
 </script>
 
 <style scoped>
+
 .contact-form {
   background-color: black;
   padding: 20px;
@@ -73,8 +74,6 @@ export default {
 .contact-form label {
   color: white;
 }
-
-.contact-form input,
 .contact-form textarea {
   background-color: black;
   color: white;
