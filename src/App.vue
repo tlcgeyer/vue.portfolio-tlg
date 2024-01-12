@@ -1,6 +1,7 @@
 <template>
   <NavBar></NavBar>
   <main>
+<!-- <SpinnerComp></SpinnerComp> -->
     <router-view/>
   </main>
   <FooterComp></FooterComp>
@@ -9,11 +10,12 @@
 <script>
 import NavBar from './components/NavBar.vue';
 import FooterComp from './components/FooterComp.vue'
-
+// import SpinnerComp from './components/SpinnerComp.vue'
 export default {
   components: {
     NavBar,
-    FooterComp
+    FooterComp,
+    // SpinnerComp
   },
 
 

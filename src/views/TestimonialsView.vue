@@ -1,4 +1,5 @@
 <template>
+  <div class="container-fluid">
     <div class="testimonials">
       <h1 class="justify-content-center d-flex display-2" id="testi">Testimonials</h1>
     </div>
@@ -6,7 +7,7 @@
   <div class="row d-flex justify-content-center" v-if="testimonials" >
   <div class="card"  v-for="testimonial in testimonials" :key="testimonial.id" >
 
-  <img :src="testimonial.profile" class="card-img-top d-flex justify-content-center" alt="profile image">
+  <img :src="testimonial.profile" class="card-img-top d-flex justify-content-center img-fluid" alt="profile image" loading="lazy">
   <div class="card-body">
     <h3 class="card-title">
       <p class="lead">{{ testimonial.name }} {{ testimonial.surname }}</p>
@@ -21,9 +22,12 @@
 </div>
     </div>
 
-    <div class="justify-content-center d-flex">
-      <!--spinner-->
-    </div>
+     <!-- <div class=" v-else">
+      <SpinnerComp></SpinnerComp>
+      </div> -->
+  </div>
+    
+   
 </template>
 
 <script>
@@ -33,10 +37,12 @@ export default {
     testimonials() {
       return this.$store.state.testimonials;
     },
+    
   },
   mounted() {
     // Rendered on the browser
     this.$store.dispatch('fetchTestimonials');
+
   },
 };
 </script>
