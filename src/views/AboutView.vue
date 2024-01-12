@@ -8,6 +8,7 @@
                 <div class="justify-content-center d-flex">
                     <img src="https://i.postimg.cc/Njq0m4bN/20240110-121622-1.jpg" alt="me" lazy="loading" class="rounded-circle my-img">
                 </div> <br><br>
+
                 <div class="pBorder">
                     <p>I originate from Cape Town, South Africa.
                     I'm an aspiring full-stack developer who found an interest in coding through games specifically Genshin Impact. Seeing all these games inspired me to want to make me want to develop my own. I'm a bit of a perfectionist when it comes to certain designs but I do not see that as a picky but a just specific as how I envision my outcome to blend and look like. 
@@ -24,15 +25,11 @@
             </div>
 
             <div class="col w-10">
-              <div class="pBorder">
-                <p class="justify-content-center d-flex" id="hob">Hobbies</p> <br>
-                <p>
-                  <ul class="justify-content-center d-flex">
-                    <li>
-                      📖
-                    </li>
-                  </ul>
-                </p>
+              <div class="pBorder justify-content-center d-flex" >
+                <p class="hob">What I enjoy during my free time</p>  <br><br>
+              
+                    <p>To take my mind off things, I frequently indulge in reading, preferably manga. </p>
+               <br><br>
               </div>
             </div>
           </div>
@@ -49,7 +46,10 @@
     }
 </script>
 
-<style scope>
+<style scoped>
+img[alt="books"] {
+  width: 200px;
+}
 
 #hob {
   font-weight: 400;
@@ -59,6 +59,7 @@
   padding-top: 1.7rem;
   font-weight: 400;
   color: white;
+  font-size: 65px;
 }
 .pBorder {
   flex-basis: 31%;
@@ -76,8 +77,13 @@
 }
 
 body {
-  background-color: black;
   font-family: 'poppins';
   height: 100%;
 }
+
+
+img[alt="me"] {
+  box-shadow: 0 0 20px 0px rgb(14,28,54);
+}
+
 </style>

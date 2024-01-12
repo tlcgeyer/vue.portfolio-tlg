@@ -26,10 +26,7 @@
     <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
 
     <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-      <div class="alt-send-button">
-        <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-      </div>
-
+        SEND
     </button>
 
   </form>
@@ -99,7 +96,6 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
   padding-bottom: 100px;
 }
 
