@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <router-link to="/">
              <!--the pic of my logo for the portfolio-->
-            <img src="" alt="">
+            <img src="https://i.ibb.co/cQpLV6G/logoo.png" alt="logo">
 
             </router-link>
 
@@ -49,3 +49,9 @@
         name: 'NavBar'
     }
 </script>
+
+<style scoped>
+img[alt="logo"] {
+    width: 90px;
+}
+</style>
