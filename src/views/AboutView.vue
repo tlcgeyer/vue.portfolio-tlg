@@ -6,11 +6,13 @@
               <div class="col w-80 my-5">
                 <!--img-->
                 <div class="justify-content-center d-flex">
-                    <img src="https://i.postimg.cc/Njq0m4bN/20240110-121622-1.jpg" alt="me" lazy="loading" class="rounded-circle my-img">
+                    <img src="https://i.postimg.cc/Njq0m4bN/20240110-121622-1.jpg" alt="me" lazy="loading" class="rounded-circle my-img img-fluid">
                 </div> <br><br>
 
-                <div class="pBorder">
-                    <p>I originate from Cape Town, South Africa.
+            </div>
+
+            <div class="col w-10">
+               <p>I originate from Cape Town, South Africa.
                     I'm an aspiring full-stack developer who found an interest in coding through games specifically Genshin Impact. Seeing all these games inspired me to want to make me want to develop my own. I'm a bit of a perfectionist when it comes to certain designs but I do not see that as a picky but a just specific as how I envision my outcome to blend and look like. 
                     <br>
                     I have the utmost confidence in my ability to succeed in the fast-paced world of technology. My creativity thrives on diversity, allowing me to adapt to new challenges and situations with ease. Despite being a self-taught programmer, I have managed to carve out a niche for myself in the industry and contribute effectively to team projects.
@@ -20,17 +22,8 @@
                     As an ambitious individual with a strong passion for creating my own games, I am eager to take on new opportunities that will enable me to apply my skills and knowledge to real-world projects. I am excited about the possibility of joining a high-class, in-demand software company where I can further enhance my abilities and contribute to the growth and success of the company.
                     <br>
                     Overall, I am confident that my free-spirited yet dedicated approach to work, combined with my unwavering commitment to personal and professional growth, will make me a valuable asset to any team.
-                    </p>
-                </div> 
-            </div>
-
-            <div class="col w-10">
-              <div class="pBorder justify-content-center d-flex" >
-                <p class="hob">What I enjoy during my free time</p>  <br><br>
-              
-                    <p>To take my mind off things, I frequently indulge in reading, preferably manga. </p>
-               <br><br>
-              </div>
+                    </p> <br> <br> <br>
+                    
             </div>
           </div>
     </div>
@@ -60,20 +53,6 @@ img[alt="books"] {
   font-weight: 400;
   color: white;
   font-size: 65px;
-}
-.pBorder {
-  flex-basis: 31%;
-  background: #D9DBF1;
-  border-radius: 10px;
-  margin: 1%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-  box-shadow: darkblue;
-  transition: 0.5s;
-  text-align: justify;
-}
-.pBorder:hover {
-  box-shadow: 0 0 20px 0px rgb(14,28,54);
 }
 
 body {
