@@ -6,16 +6,16 @@
     </div>
     
   <div class="row d-flex justify-content-center" v-if="education" >
-  <div class="card"  v-for="educations in education" :key="educations.id" >
+  <div class="card"  v-for="educations in education" :key="educations" >
 
-  <img :src="education.image" class="card-img-top d-flex justify-content-center img-fluid" alt="education image" loading="lazy">
+  <img :src="educations.image" class="card-img-top d-flex justify-content-center img-fluid" alt="education image" loading="lazy">
   <div class="card-body">
     <h6 class="card-level">
-      <p class="lead-3">"{{ education.year}}"</p>
+      <p class="lead-3">"{{ educations.year}}"</p>
   </h6>
 
-    <h6 class="card-description">
-      <p class="lead-3">"{{ education.description}}"</p>
+    <h6 class="card-info">
+      <p class="lead-3">"{{ educations.info}}"</p>
   </h6>
     
 
@@ -110,6 +110,7 @@
   border-radius: 15px;
   box-shadow: 0 0 10px blue;
   transition: size 0.3s transform 0.2s ease-in-out;
+  overflow: scroll
 }
 
 

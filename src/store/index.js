@@ -3,6 +3,7 @@ const dataUrl = 'https://tlcgeyer.github.io/vue.portfolioData-tlg/data/'
 
 export default createStore({
   state: { //allow us to access any variable
+    education: null,
     skills: null ,
     projects: null ,
     testimonials: null,
@@ -10,6 +11,9 @@ export default createStore({
   getters: {
   },
   mutations: { //allow us to update the state
+    setEducation(state, value){
+      state.education = value
+    },
     setSkills(state, value){
       state.skills = value
     },
