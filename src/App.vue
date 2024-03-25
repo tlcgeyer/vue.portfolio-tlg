@@ -1,5 +1,6 @@
 <template>
-  <NavBar></NavBar>
+  <NavBar></NavBar> 
+  <br>
   <main>
 <!-- <SpinnerComp></SpinnerComp> -->
     <router-view/>

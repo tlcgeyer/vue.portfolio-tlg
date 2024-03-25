@@ -11,7 +11,7 @@
 
                     <div class="ellipses-container-fluid">
 
-                        <h2 class="greeting" id="text-animation"><em>Aspiring <br> <br> Full-stack <br><br>Developer</em></h2>
+                        <h2 class="greeting" id="text-animation"><em> Full-stack <br><br>Developer</em></h2>
 
                         <div class="ellipses ellipses__outer--thin">
 

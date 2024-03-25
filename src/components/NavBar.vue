@@ -1,7 +1,7 @@
 <!--The navbar -->
 
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <nav class="navbar navbar-expand-lg navbar sticky-top bg-light">
         <div class="container-fluid">
             <router-link to="/">
              <!--the pic of my logo for the portfolio-->
@@ -14,8 +14,9 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end d-flex w-100">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse">
+            <div class="justify-content-end d-flex w-100">
+                <ul class="navbar-nav">
             <li class="nav-item">
                     <router-link to ="/" class="nav-link">Home<!--insert icon--></router-link> 
             </li>  
@@ -40,6 +41,7 @@
             </li>
             </ul>  
           </div>
+        </div>
         </div>
     </nav>
 </template>

@@ -1,9 +1,10 @@
 <!--Footer-->
 <template> 
-    <div class="container-fluid d-flex justify-content-center fixed-bottom" id="footer" >
+    <div class="container-fluid d-flex justify-content-center" id="footer" >
         <div class="row">
             <p class="lead">
-                tlgc  All Rights Reserved&copy; 
+                <span class="d-flex justify-content-center">Tamlin Leigh Geyer</span>
+                <br> All Rights Reserved&copy; 
                 <span>{{ currYear }}</span> <br>
                 <!--Do not forget to add insta,github,indeed,facebook-->
             </p>

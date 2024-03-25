@@ -5,28 +5,33 @@
     </div>
     
   <div class="row d-flex justify-content-center" v-if="testimonials" >
-  <div class="card"  v-for="testimonial in testimonials" :key="testimonial.id" >
+  <div class="card mb-3" style="max-width: 540px;" v-for="testimonial in testimonials" :key="testimonial.id" >
 
-  <img :src="testimonial.profile" class="card-img-top d-flex justify-content-center img-fluid" alt="profile image" loading="lazy">
-  <div class="card-body">
-    <h3 class="card-title">
-      <p class="lead">{{ testimonial.name }} {{ testimonial.surname }}</p>
-    </h3>
-
-    <h6 class="card-quote">
-      <p class="lead-3">"{{ testimonial.quote}}"</p>
-  </h6>
-    
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img :src="testimonial.profile" class="img-fluid rounded-start" alt="profile-image" loading="lazy">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">
+          <p class="lead">{{ testimonial.name }} {{ testimonial.surname }}</p>
+        </h5>
+        
+        <h6 class="card-quote">
+          <p class="lead-3">"{{ testimonial.quote}}"</p>
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
 
   </div>
 </div>
-    </div>
 
      <!-- <div class=" v-else">
       <SpinnerComp></SpinnerComp>
       </div> -->
-  </div>
-    
+    <br><br><br>
    
 </template>
 
@@ -62,9 +67,8 @@ body {
 
 .card {
   justify-content: space-between;
-  row-gap: 1.5rem;
   margin:80px;
-  height: 600px;
+  height: 300px;
   width: 400px;
   background-color: lightgray; /* Dark blue background color */
   border-radius: 15px;
@@ -85,6 +89,6 @@ img[alt="profile image"] {
 .lead-3 {
   text-align: justify;
   font-style: italic;
-  font-size: large;
+  font-size: small;
 }
 </style>
