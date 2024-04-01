@@ -2,14 +2,15 @@
 <!--------------------------Education------------------------------------->
 <div class="container-fluid">
     <div class="skills">
-      <h1 class="justify-content-center d-flex display-2" id="education">Education</h1>
+      <h1 class="justify-content-start d-flex" id="education">Education</h1>
     </div>
-    
-  <div class="row d-flex justify-content-center" v-if="education" >
-  <div class="card"  v-for="educations in education" :key="educations" >
+    <div  class="black-line"></div>
+  <div v-if="education" >
+  <div v-for="educations in education" :key="educations" >
 
-  <img :src="educations.image" class="card-img-top d-flex justify-content-center img-fluid" alt="education image" loading="lazy">
-  <div class="card-body">
+  <!-- <img :src="educations.image" class="card-img-top d-flex justify-content-center img-fluid" alt="education image" loading="lazy"> -->
+<br>
+  <div class="card-body justify-content-start d-flex" style="">
     <h6 class="card-level">
       <p class="lead-3">"{{ educations.year}}"</p>
   </h6>
@@ -83,22 +84,23 @@
   </script>
 
   <style scoped>
- body {
-  background-color: black;
-  color: white; /* Set text color to white */
-  font-family: poppins;
+ .black-line {
+    width: 70%; /* Adjust the width as needed */
+    height: 1px; /* Adjust the height as needed */
+    padding:1px;
+    margin-left: 100px;
+    background-color:black; /* Set the background color to black */
 }
 
 #skills {
-  font-weight: 600;
-  color: white;
-  font-family: poppins;
+  font-weight: 400;
+  color: black;
 }
 
 #education {
-   font-weight: 600;
-  color: white;
-  font-family: poppins;
+  font-weight: 400;
+  color: black;
+  padding-left: 100px;
 }
 
 .card {
@@ -106,11 +108,8 @@
   margin:30px;
   height: 400px;
   width: 400px;
-  background-color: lightgray; /* Dark blue background color */
-  border-radius: 15px;
-  box-shadow: 0 0 10px blue;
-  transition: size 0.3s transform 0.2s ease-in-out;
-  overflow: scroll
+  background-color: white; 
+
 }
 
 
@@ -121,10 +120,10 @@ img[alt="skill image"] {
   padding-top: 25px;
 }
 
-img[alt="education image"] {
-  width: 200px;
-  height: 200px;
+/* img[alt="education image"] {
+  width: 100px;
+  height: 100px;
   margin-left: 90px;
   padding-top: 25px;
-}
+} */
   </style>

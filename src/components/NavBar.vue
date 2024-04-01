@@ -1,62 +1,121 @@
-<!--The navbar -->
-
 <template>
     <div>
-             <div class="d-flex justify-content-start flex-column">
-         <router-link to="/">
-             <!--the pic of my logo for the portfolio-->
-            <img src="https://i.ibb.co/cQpLV6G/logoo.png" alt="logo">
-        </router-link>
-     </div>
-   
-
-    <nav class="navbar navbar-expand-lg navbar sticky-top bg-light" id="navbar">
+      <br>  
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbarr">
         <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto" style="font-family: 'Saira';">
-            <li class="nav-item">
-                    <router-link to ="/" class="nav-link">Home<!--insert icon--></router-link> 
-            </li>  
-            <li class="nav-item">
-                 <router-link to ="/about" class="nav-link">About<!--insert icon--></router-link>
-            </li>
-                   
-            <li class="nav-item">
-                <router-link to ="/resume" class="nav-link">Resume<!--insert icon--></router-link>
-            </li>    
-                    
-            <li class="nav-item">
-                <router-link to ="/projects" class="nav-link">Projects<!--insert icon--></router-link>
-            </li>    
-                    
-            <li class="nav-item">
-                 <router-link to ="/testimonials" class="nav-link">Testimonials<!--insert icon--></router-link>
-            </li>   
-                   
-            <li class="nav-item">
-                 <router-link to ="/reachMe" class="nav-link">Contact Me<!--insert icon--></router-link>
-            </li>
-            </ul>  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav mx-auto" style="font-family: 'Saira';">
+              <li class="nav-item">
+                <router-link to="/" class="nav-link">Home</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/about" class="nav-link">About</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/resume" class="nav-link">Resume</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/projects" class="nav-link">Projects</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/testimonials" class="nav-link">Testimonials</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/reachMe" class="nav-link">Contact me</router-link>
+              </li>
+            </ul>
           </div>
-        </div>  
-    </nav>
+        </div>
+      </nav>
+      <br>
     </div>
-
-</template>
-
-<script>
-    export default {
-        name: 'NavBar'
+  </template>
+  
+  <script>
+  export default {
+    name: 'NavBar',
+    computed: {
+      
     }
-</script>
+  }
+  </script>
+  
+  <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+  
+  /* Logo */
+  .logo {
+    width: 100px;
+  }
+  
+  /* Navbar */
+  .nav-item {
+    font-size: 20px;
+  }
+  
+  .navbar-nav li {
+    margin-inline: .2rem;
+  }
+  
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-
-img[alt="logo"] {
-    width: 90px;
-}
-</style>
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .nav-item {
+      font-size: 16px;
+    }
+  
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fffdfd;
+    transition: color 0.3s; 
+  }
+  
+  nav ul li a:hover {
+    color: #9f423a; 
+  }
+  
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fffdfd;
+    position: relative; /* Add relative positioning to anchor element */
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Set the height of the underline */
+    background-color: transparent; /* Initially, make it transparent */
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.3s; /* Add transition for smooth effect */
+  }
+  
+  nav ul li a:hover::after {
+    background-color: #7f423a; /* Change background color on hover */
+  }
+  
+  </style>

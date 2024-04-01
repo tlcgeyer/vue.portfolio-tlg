@@ -1,22 +1,18 @@
 <template>
-  <NavBar></NavBar> 
-  <br>
-  <main>
-<!-- <SpinnerComp></SpinnerComp> -->
-    <router-view/>
-  </main>
-  <FooterComp></FooterComp>
+  <NavBar/> 
+  <router-view/>
+  <FooterComp/>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue';
-import FooterComp from './components/FooterComp.vue'
-// import SpinnerComp from './components/SpinnerComp.vue'
+import FooterComp from './components/FooterComp.vue';
+
+
 export default {
   components: {
     NavBar,
     FooterComp,
-    // SpinnerComp
   },
 
 
@@ -25,6 +21,22 @@ export default {
 
 
 
-<style src="./assets/css/style.css"> 
-@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+<style> 
+
+#app {
+  font-family: "Saira";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: black;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: black;
+}
 </style>
