@@ -1,8 +1,8 @@
 <template>
   <div class="container-fluid">
     <div class="testimonials">
-      <h1 class="justify-content-center d-flex display-2" id="testi">Testimonials</h1>
-    </div>
+      <h1 class="justify-content-center d-flex" id="testi">Feedback from Colleagues</h1>
+    </div> <br>
     
   <div class="row d-flex justify-content-center" v-if="testimonials" >
   <div class="card mb-3" style="max-width: 540px;" v-for="testimonial in testimonials" :key="testimonial.id" >
@@ -56,29 +56,15 @@ export default {
 body {
   background-color: black;
   color: white; /* Set text color to white */
-  font-family: poppins;
 }
 
 #testi {
   font-weight: 600;
   color: white;
-  font-family: poppins;
 }
 
-.card {
-  justify-content: space-between;
-  margin:80px;
-  height: 300px;
-  width: 400px;
-  background-color: lightgray; /* Dark blue background color */
-  border-radius: 15px;
-  box-shadow: 0 0 10px blue;
-  transition: size 0.3s transform 0.2s ease-in-out;
-}
 
-card:hover {
-  transform: scale(1.05); 
-}
+
 
 img[alt="profile image"] {
   width: 200px;

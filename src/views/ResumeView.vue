@@ -9,13 +9,15 @@
   <div v-for="educations in education" :key="educations" >
 
   <!-- <img :src="educations.image" class="card-img-top d-flex justify-content-center img-fluid" alt="education image" loading="lazy"> -->
-<br>
-  <div class="card-body justify-content-start d-flex" style="">
-    <h6 class="card-level">
-      <p class="lead-3">"{{ educations.year}}"</p>
+<br> 
+  <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
+    <h6 class="card-level"> 
+      <p class="lead-3">-{{ educations.year}}</p>
   </h6>
 
-    <h6 class="card-info">
+  <br><br>
+
+    <h6 class="card-info"><br><br>
       <p class="lead-3">"{{ educations.info}}"</p>
   </h6>
     

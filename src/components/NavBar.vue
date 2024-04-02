@@ -29,7 +29,10 @@
                 <router-link to="/testimonials" class="nav-link">Testimonials</router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/reachMe" class="nav-link">Contact me</router-link>
+                <button type="button" style="background-color: pink;">
+                  <router-link to="/reachMe" class="nav-link">Contact me <i class="fa-solid fa-user fa-bounce"></i></router-link>
+                </button>
+                
               </li>
             </ul>
           </div>
@@ -72,7 +75,6 @@
     .nav-item {
       font-size: 16px;
     }
-  
   }
   
   nav ul {
