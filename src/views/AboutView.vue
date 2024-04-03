@@ -51,10 +51,10 @@ img[alt="books"] {
 #aboutMe {
   padding-top: 1.7rem;
   font-weight: 400;
-  color: white;
+  color: #BFCC94;
   font-size: 65px;
   font-family: 'Saira';
-  text-shadow: 2px 2px 2px #8B0000 ;
+  text-shadow: 2px 2px 2px  #BFCC94;
 }
 
 

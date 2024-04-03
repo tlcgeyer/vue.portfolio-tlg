@@ -38,13 +38,13 @@
     <!------------------------------------------ Skills -------------------------------------->
     <div class="container-fluid">
     <div class="skills">
-      <h1 class="justify-content-center d-flex display-2" id="skills">Skills</h1>
+      <h1 class="justify-content-start d-flex" id="skills">Skills</h1>
     </div>
     
   <div class="row d-flex justify-content-center" v-if="skills">
-  <div class="card"  v-for="skill in skills" :key="skill.id" >
+  <div class="card" style="width: 300px; height: 400px;"  v-for="skill in skills" :key="skill.id" >
 
-  <img :src="skill.image" class="card-img-top d-flex justify-content-center img-fluid" alt="skill image" loading="lazy">
+  <img :src="skill.image" class="card-img-top d-flex justify-content-center img-fluid" alt="skill image" loading="lazy" style="margin-right: 100px;">
   <div class="card-body">
     <h3 class="card-title">
       <p class="lead">{{ skill.language }}</p>
@@ -54,10 +54,6 @@
       <p class="lead-3">"{{ skill.level}}"</p>
   </h6>
 
-    <h6 class="card-description">
-      <p class="lead-3">"{{ skill.comment}}"</p>
-  </h6>
-    
 
   </div>
 </div>
@@ -97,6 +93,7 @@
 #skills {
   font-weight: 400;
   color: black;
+  padding-left: 100px;
 }
 
 #education {
@@ -116,9 +113,6 @@
 
 
 img[alt="skill image"] {
-  width: 200px;
-  height: 200px;
-  margin-left: 90px;
   padding-top: 25px;
 }
 

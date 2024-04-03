@@ -6,7 +6,7 @@
     <br>
 
     <div class="row justify-content-center"  v-if="testimonials">
-      <div v-for="testimonial in testimonials" :key="testimonial.id" class="col-md-6 mb-3">
+      <div v-for="testimonial in testimonials" :key="testimonial.id" class="col-md-8 mb-3">
         <div class="card testimonial-card">
           <div class="row g-0">
             <div class="col-md-4">

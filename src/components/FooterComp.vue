@@ -3,8 +3,8 @@
     <div class="container-fluid d-flex justify-content-center" id="footer" >
         <div class="row">
             <p class="lead">
-                <span class="d-flex justify-content-center">Tamlin Leigh Geyer</span>
-                <br> All Rights Reserved&copy; 
+                <span class="d-flex justify-content-start">Tamlin Leigh Geyer</span>
+                 All Rights Reserved&copy; 
                 <span>{{ currYear }}</span> <br>
                 <!--Do not forget to add insta,github,indeed,facebook-->
             </p>
@@ -25,8 +25,8 @@
 
 <style scoped>
 #footer {
-    background-color:#B15E6C ;
-    color: white;
+    background-color:black;
+    color:  #BFCC94;;
     font-weight: 400;
     display: flex;
     

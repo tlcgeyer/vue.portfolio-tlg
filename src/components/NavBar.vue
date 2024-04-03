@@ -28,14 +28,12 @@
               <li class="nav-item">
                 <router-link to="/testimonials" class="nav-link">Testimonials</router-link>
               </li>
-           
-            </ul>
-            <li class="nav-item" style="text-decoration: none;">
-                <button type="button" style="background-color: white; border-radius: 10px;">
+              <li class="nav-item">
+                <button type="button" style="background-color: white; border-radius: 10px; padding: 5px; color: black;" >
                   <router-link to="/reachMe" class="nav-link">Contact me <i class="fa-solid fa-user fa-bounce"></i></router-link>
                 </button>
-                
-            </li>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -96,7 +94,7 @@
   }
   
   nav ul li a:hover {
-    color: #9f423a; 
+    color:  #BFCC94; 
   }
 
   nav ul li a {
@@ -116,12 +114,9 @@
     transition: background-color 0.3s; 
   }
   
-  nav ul li a:hover::after {
-    background-color: #7f423a; 
-  }
-
+  
   .nav-link.router-link-exact-active::after {
-  background-color: #7f423a; 
+  background-color:  #BFCC94;
   
 }
   
