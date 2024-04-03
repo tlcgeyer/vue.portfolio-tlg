@@ -20,7 +20,7 @@
                 <router-link to="/about" class="nav-link">About</router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/resume" class="nav-link">Resume</router-link>
+                <router-link to="/resume" class="nav-link">Education/Work Experience</router-link>
               </li>
               <li class="nav-item">
                 <router-link to="/projects" class="nav-link">Projects</router-link>
@@ -28,13 +28,14 @@
               <li class="nav-item">
                 <router-link to="/testimonials" class="nav-link">Testimonials</router-link>
               </li>
-              <li class="nav-item">
-                <button type="button" style="background-color: pink;">
+           
+            </ul>
+            <li class="nav-item" style="text-decoration: none;">
+                <button type="button" style="background-color: white; border-radius: 10px;">
                   <router-link to="/reachMe" class="nav-link">Contact me <i class="fa-solid fa-user fa-bounce"></i></router-link>
                 </button>
                 
-              </li>
-            </ul>
+            </li>
           </div>
         </div>
       </nav>
@@ -97,27 +98,31 @@
   nav ul li a:hover {
     color: #9f423a; 
   }
-  
-  
+
   nav ul li a {
     text-decoration: none;
     color: #fffdfd;
-    position: relative; /* Add relative positioning to anchor element */
+    position: relative; 
   }
-  
   nav ul li a::after {
     content: '';
     position: absolute;
+
     width: 100%;
-    height: 2px; /* Set the height of the underline */
-    background-color: transparent; /* Initially, make it transparent */
+    height: 2px; 
+    background-color: transparent; 
     bottom: 0;
     left: 0;
-    transition: background-color 0.3s; /* Add transition for smooth effect */
+    transition: background-color 0.3s; 
   }
   
   nav ul li a:hover::after {
-    background-color: #7f423a; /* Change background color on hover */
+    background-color: #7f423a; 
   }
+
+  .nav-link.router-link-exact-active::after {
+  background-color: #7f423a; 
+  
+}
   
   </style>

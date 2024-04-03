@@ -25,8 +25,8 @@
 
 <style scoped>
 #footer {
-    background-color: white;
-    color: pink;
+    background-color:#B15E6C ;
+    color: white;
     font-weight: 400;
     display: flex;
     

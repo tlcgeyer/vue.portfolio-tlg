@@ -1,38 +1,28 @@
 <template>
-  <div class="container-fluid">
-    <div class="testimonials">
-      <h1 class="justify-content-center d-flex" id="testi">Feedback from Colleagues</h1>
-    </div> <br>
-    
-  <div class="row d-flex justify-content-center" v-if="testimonials" >
-  <div class="card mb-3" style="max-width: 540px;" v-for="testimonial in testimonials" :key="testimonial.id" >
-
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img :src="testimonial.profile" class="img-fluid rounded-start" alt="profile-image" loading="lazy">
+  <div class="container">
+    <div class="testimonials text-center">
+      <h1 id="testi">Feedback from Colleagues</h1>
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">
-          <p class="lead">{{ testimonial.name }} {{ testimonial.surname }}</p>
-        </h5>
-        
-        <h6 class="card-quote">
-          <p class="lead-3">"{{ testimonial.quote}}"</p>
-        </h6>
+    <br>
+
+    <div class="row justify-content-center"  v-if="testimonials">
+      <div v-for="testimonial in testimonials" :key="testimonial.id" class="col-md-6 mb-3">
+        <div class="card testimonial-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img :src="testimonial.profile" class="img-fluid" alt="profile-image" loading="lazy">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{ testimonial.name }} {{ testimonial.surname }}</h5>
+                <p class="card-text">{{ testimonial.quote }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-  </div>
-</div>
-
-     <!-- <div class=" v-else">
-      <SpinnerComp></SpinnerComp>
-      </div> -->
-    <br><br><br>
-   
 </template>
 
 <script>
@@ -42,39 +32,38 @@ export default {
     testimonials() {
       return this.$store.state.testimonials;
     },
-    
   },
   mounted() {
     // Rendered on the browser
     this.$store.dispatch('fetchTestimonials');
-
   },
 };
 </script>
 
 <style scoped>
-body {
-  background-color: black;
-  color: white; /* Set text color to white */
+.testimonials {
+  margin-bottom: 30px;
 }
 
-#testi {
-  font-weight: 600;
-  color: white;
+.testimonial-card {
+  background-color: #222;
+  color: #fff; 
 }
 
-
-
-
-img[alt="profile image"] {
-  width: 200px;
-  height: 200px;
-  margin-left: 90px;
-  padding-top: 25px;
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* Ensure the image covers the entire space */
+  border-radius: 50%; 
+  margin: 10px; 
 }
-.lead-3 {
-  text-align: justify;
-  font-style: italic;
-  font-size: small;
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
 }
 </style>

@@ -25,6 +25,7 @@ export default {
 
 #app {
   font-family: "Saira";
+  background-color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
