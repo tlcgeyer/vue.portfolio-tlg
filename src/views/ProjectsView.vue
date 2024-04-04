@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1 class="text-center" id="projects">Projects</h1>
-    </div>
+    </div><br><br>
     
     <div class="row justify-content-center" v-if="projects">
       <div v-for="project in projects" :key="project.id" class="col-lg-4 col-md-6 col-sm-10 col-12 mb-4">
@@ -11,9 +11,9 @@
           <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
             <p class="card-text">{{ project.description }}</p> 
-            <div class="button-container d-flex justify-content-center">
-              <a :href="project.github" class="btn btn-primary" target="_blank">GitHub</a> 
-              <a :href="project.netlify" class="btn btn-primary" target="_blank">Netlify</a>
+            <div class="button-container d-flex justify-content-center ">
+              <a :href="project.github" class="btn btn-primary mx-2" target="_blank">GitHub</a> 
+              <a :href="project.netlify" class="btn btn" style="color: #00A6A6;" target="_blank">Live</a>
             </div>
           </div>
         </div>
@@ -38,18 +38,21 @@ export default {
 
 <style scoped>
 #projects {
-  font-weight: 600;
-  color: white;
+  padding-top: 1.7rem;
+  font-weight: 400;
+  color: black;
+  font-size: 65px;
+  font-family: 'Saira';
+  text-shadow: 2px 2px 2px  #BFCC94;
 }
 
 .card {
-  margin: 0 15px 30px;
+  height: 500px;
   border-radius: 15px;
 }
 
 .card-img-top {
   width: 100%;
-  height: auto;
 }
 
 .button-container {

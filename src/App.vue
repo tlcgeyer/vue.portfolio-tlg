@@ -1,6 +1,9 @@
 <template>
   <NavBar/> 
   <router-view/>
+  <main>
+    
+  </main>
   <FooterComp/>
 </template>
 

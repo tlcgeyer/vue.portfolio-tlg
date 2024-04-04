@@ -60,7 +60,7 @@ export default {
 
 .card-title {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight:500;
 }
 
 .card-text {
