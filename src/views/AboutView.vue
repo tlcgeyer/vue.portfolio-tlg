@@ -26,6 +26,13 @@
             
           </div>
     </div>
+    <div class="justify-content-center">
+      <button>
+        <a href="hhttps://docs.google.com/document/d/1CXAmhHSl0oUZMmWvDhoenXiwUTdrtF0DTGD0YjsoaSY/edit?usp=sharing" class="yes" target="_blank" style="text-decoration: none; color: black;">
+		Download CV</a>
+      </button>
+    </div>
+    <br><br>
 </div>
 </template>
 

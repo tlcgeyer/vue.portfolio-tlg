@@ -9,37 +9,7 @@
   <div>
 
   <!-- <img :src="educations.image" class="card-img-top d-flex justify-content-center img-fluid" alt="education image" loading="lazy"> -->
-<br>  <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
-    <h6 class="card-level"> 
-      <p class="lead-3">- Full-Stack Developement at Life Choices Coding Academy <br><br><span style="color: grey;">Sept 2023- March 2024</span></p>
-    </h6><br><br>
-     <br><br>
-  </div>
-    <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
-    <h6 class="card-level"> 
-      <p class="lead-3">- End-user Programmer <span style="font-size: smaller; font-style: italic; color: green;">course completed</span> <br><br><span style="color: grey;">March 2023 - Aug 2023 </span></p>
-    </h6><br><br>
-
-  <br><br>
-
-  </div>
-    <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
-    <h6 class="card-level"> 
-      <p class="lead-3">- Physiotherapy at University of Western Cape <span style="font-size: smaller; font-style: italic; color: green;">course incompleted</span> <br><br><span style="color: grey;">Jan 2022 - March 2022 </span></p>
-    </h6><br><br>
-
-  <br><br>
-
-  </div>
-    <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
-    <h6 class="card-level"> 
-      <p class="lead-3">- Introduction to Psycology <span style="font-size: smaller; font-style: italic; color: green;">coursed completed</span><br><br><span style="color: grey;">April 2021 - October 2021 </span></p>
-    </h6><br><br>
-
-  <br><br>
-
-  </div>
-
+<br> 
   <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
     <h6 class="card-level"> 
       <p class="lead-3">- Pacaltsdorp Secondary School <br><br><span style="color: grey;">Jan 2017- Jan 2021</span></p>
@@ -48,10 +18,36 @@
   <br><br><br>
 
   </div>
+  <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
+    <h6 class="card-level"> 
+      <p class="lead-3">- Introduction to Psycology <span style="font-size: smaller; font-style: italic; color: green;">coursed completed</span> <br><br><span style="color: grey;">April 2021 - October 2021 </span></p>
+    </h6><br><br>
 
+  <br><br>
 
+  </div>
+  <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
+    <h6 class="card-level"> 
+      <p class="lead-3">- Physiotherapy at University of Western Cape <span style="font-size: smaller; font-style: italic; color: green;">course incompleted</span> <br><br><span style="color: grey;">Jan 2022 - March 2022 </span></p>
+    </h6><br><br>
 
- 
+  <br><br>
+
+  </div>
+  <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
+    <h6 class="card-level"> 
+      <p class="lead-3">- End-user Programmer <span style="font-size: smaller; font-style: italic; color: green;">course completed</span> <br><br><span style="color: grey;">March 2023 - Aug 2023 </span></p>
+    </h6><br><br>
+
+  <br><br>
+
+  </div>
+  <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
+    <h6 class="card-level"> 
+      <p class="lead-3">- Full-Stack Developement at Life Choices Coding Academy <br><br><span style="color: grey;">Sept 2023- March 2024</span></p>
+    </h6><br><br>
+  <br><br>
+  </div>
 </div>
 </div>
 </div>
@@ -91,7 +87,7 @@
     </div>
     
   <div class="row d-flex justify-content-center" v-if="skills">
-  <div class="card" style="width: 200px; height: 280px;"  v-for="skill in skills" :key="skill.id" >
+  <div class="card" style="width: 200px; height: 250px;"  v-for="skill in skills" :key="skill.id" >
 
   <img :src="skill.image" class="card-img-top d-flex justify-content-center img-fluid" alt="skill image" loading="lazy" style="margin-right: 100px;">
   <div class="card-body">
