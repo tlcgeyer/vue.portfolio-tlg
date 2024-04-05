@@ -46,8 +46,15 @@ export default {
 }
 
 .testimonial-card {
-  background-color: #222;
-  color: #fff; 
+  background-color: #00A6A6;
+  color: white; 
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.5); /* Orange hue box shadow */
+    border: 2px solid transparent; /* Start with a transparent border */
+    animation: border-animation 2s infinite; /* Apply border animation */
+  }
 }
 
 .testimonial-card img {
@@ -65,5 +72,17 @@ export default {
 
 .card-text {
   font-size: 1rem;
+}
+
+@keyframes border-animation {
+  0% {
+    border-color: #EFCA08; /* Start with red */
+  }
+  50% {
+    border-color: #F08700; /* Change to green halfway */
+  }
+  100% {
+    border-color:  #00A6A6; /* End with blue */
+  }
 }
 </style>

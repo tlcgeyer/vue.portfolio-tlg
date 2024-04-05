@@ -25,9 +25,9 @@
               </form><br><br>
               
           </div>
-          <div class="col-md-5" id="makeCard">
+          <div class="col-md-5 " id="makeCard">
               <h4 class="heading1">Get In Touch</h4>
-              <p class="lead" id="para">Have questions or just want to chat about a possible hire? <span style="margin-left: 125px;">Below are my details.</span></p> <br><br>
+              <p class="lead" id="para">Have questions or just want to chat about a possible hire? <span class="d-flex justify-content-center">Below are my details.</span></p> <br><br>
 
 <a href="https://maps.app.goo.gl/GGoTrnTA9FsUwnqh7" target="_blank" rel="noopener noreferrer" class="mx-2"><svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10 14C12.2091 14 14 12.2091 14 10C14 7.79086 12.2091 6 10 6C7.79086 6 6 7.79086 6 10C6 12.2091 7.79086 14 10 14Z" stroke="#00A6A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -128,6 +128,14 @@ textarea {
     padding: 10px 20px;
 }
 
+@media (max-width: 768px) {
+  .submit-form {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+}
+
 #name {
     border-radius:13px;
     border-color:  #00A6A6;
@@ -155,9 +163,4 @@ textarea {
     font-size: small;
 }
 
-#makeCard {
-    margin-left: 100px;
-    padding: 15px;
-  
-}
 </style>

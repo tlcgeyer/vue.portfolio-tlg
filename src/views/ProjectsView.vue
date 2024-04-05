@@ -6,14 +6,16 @@
     
     <div class="row justify-content-center" v-if="projects">
       <div v-for="project in projects" :key="project.id" class="col-lg-4 col-md-6 col-sm-10 col-12 mb-4">
-        <div class="card" style="background-color: white">
+        <div class="card">
           <img :src="project.image" class="card-img-top img-fluid" alt="projects image" loading="lazy">
           <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
             <p class="card-text">{{ project.description }}</p> 
-            <div class="button-container d-flex justify-content-center ">
+            <div class="card-footer">
+              <div class="button-container d-flex justify-content-center  ">
               <a :href="project.github" class="btn btn-primary mx-2" target="_blank">GitHub</a> 
-              <a :href="project.netlify" class="btn btn" style="color: #00A6A6;" target="_blank">Live</a>
+              <a :href="project.netlify" class="btn btn-danger"  target="_blank">Live</a>
+            </div>
             </div>
           </div>
         </div>
@@ -48,15 +50,26 @@ export default {
 
 .card {
   height: 500px;
-  border-radius: 15px;
+  background-color: black;
+  color: white;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.5); /* Orange hue box shadow */
+  }
 }
 
 .card-img-top {
   width: 100%;
+  height: 200px;
+  transition: box-shadow 0.3s ease;
 }
 
 .button-container {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 @media (max-width: 576px) { /* Small devices (phones) */
@@ -64,4 +77,9 @@ export default {
     margin: 0 10px 30px;
   }
 }
+
+.card:hover .card-img-top {
+  transform: scale(1.05); /* Scale up the image on hover */
+}
+
 </style>

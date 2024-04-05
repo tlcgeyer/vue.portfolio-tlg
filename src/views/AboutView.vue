@@ -2,8 +2,8 @@
     <div class="container" id="about">
       <h2  class="justify-content-center d-flex"  id="aboutMe"><span>About me</span></h2> <br><br>
                 
-            <div class="row d-flex"> <br>
-              <div class="col w-80 my-5">
+            <div class="row d-flex "> <br>
+              <div class="col-lg-4 col-md-7 w-80 my-5">
                 <!--img-->
                 <div class="justify-content-center d-flex">
                     <img src="https://i.postimg.cc/Njq0m4bN/20240110-121622-1.jpg" alt="me" lazy="loading" class="rounded-circle my-img img-fluid">
@@ -11,7 +11,7 @@
 
             </div>
 
-            <div class="col w-10" style="font-family: 'Saira'; ">
+            <div class="col w-10" style="font-family: 'Saira'; " id="infos">
                <p>I originate from Cape Town, South Africa.
                     I'm an aspiring full-stack developer who found an interest in coding through games specifically Genshin Impact. Seeing all these games inspired me to want to make me want to develop my own. I'm a bit of a perfectionist when it comes to certain designs but I do not see that as a picky but a just specific as how I envision my outcome to blend and look like. 
                     <br><br>
@@ -23,9 +23,10 @@
                     Overall, I am confident that my free-spirited yet dedicated approach to work, combined with my unwavering commitment to personal and professional growth, will make me a valuable asset to any team.
                     </p> <br> <br> <br>
                     
-            </div>
+            
           </div>
     </div>
+</div>
 </template>
 
 
@@ -61,5 +62,11 @@ img[alt="books"] {
 img[alt="me"] {
   box-shadow: 2px 2px 2px #84A59D ;
 }
+
+/* #about {
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+} */
 
 </style>

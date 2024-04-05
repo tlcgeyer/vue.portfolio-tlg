@@ -9,7 +9,37 @@
   <div>
 
   <!-- <img :src="educations.image" class="card-img-top d-flex justify-content-center img-fluid" alt="education image" loading="lazy"> -->
-<br> 
+<br>  <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
+    <h6 class="card-level"> 
+      <p class="lead-3">- Full-Stack Developement at Life Choices Coding Academy <br><br><span style="color: grey;">Sept 2023- March 2024</span></p>
+    </h6><br><br>
+     <br><br>
+  </div>
+    <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
+    <h6 class="card-level"> 
+      <p class="lead-3">- End-user Programmer <span style="font-size: smaller; font-style: italic; color: green;">course completed</span> <br><br><span style="color: grey;">March 2023 - Aug 2023 </span></p>
+    </h6><br><br>
+
+  <br><br>
+
+  </div>
+    <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
+    <h6 class="card-level"> 
+      <p class="lead-3">- Physiotherapy at University of Western Cape <span style="font-size: smaller; font-style: italic; color: green;">course incompleted</span> <br><br><span style="color: grey;">Jan 2022 - March 2022 </span></p>
+    </h6><br><br>
+
+  <br><br>
+
+  </div>
+    <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
+    <h6 class="card-level"> 
+      <p class="lead-3">- Introduction to Psycology <span style="font-size: smaller; font-style: italic; color: green;">coursed completed</span><br><br><span style="color: grey;">April 2021 - October 2021 </span></p>
+    </h6><br><br>
+
+  <br><br>
+
+  </div>
+
   <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
     <h6 class="card-level"> 
       <p class="lead-3">- Pacaltsdorp Secondary School <br><br><span style="color: grey;">Jan 2017- Jan 2021</span></p>
@@ -18,36 +48,10 @@
   <br><br><br>
 
   </div>
-  <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
-    <h6 class="card-level"> 
-      <p class="lead-3">- Introduction to Psycology <span style="font-size: smaller; font-style: italic; color: green;">coursed completed</span> <br><br><span style="color: grey;">April 2021 - October 2021 </span></p>
-    </h6><br><br>
 
-  <br><br>
 
-  </div>
-  <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
-    <h6 class="card-level"> 
-      <p class="lead-3">- Physiotherapy at University of Western Cape <span style="font-size: smaller; font-style: italic; color: green;">course incompleted</span> <br><br><span style="color: grey;">Jan 2022 - March 2022 </span></p>
-    </h6><br><br>
 
-  <br><br>
-
-  </div>
-  <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
-    <h6 class="card-level"> 
-      <p class="lead-3">- End-user Programmer <span style="font-size: smaller; font-style: italic; color: green;">course completed</span> <br><br><span style="color: grey;">March 2023 - Aug 2023 </span></p>
-    </h6><br><br>
-
-  <br><br>
-
-  </div>
-  <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
-    <h6 class="card-level"> 
-      <p class="lead-3">- Full-Stack Developement at Life Choices Coding Academy <br><br><span style="color: grey;">Sept 2023- March 2024</span></p>
-    </h6><br><br>
-  <br><br>
-  </div>
+ 
 </div>
 </div>
 </div>
@@ -61,22 +65,18 @@
     <div class="row d-flex justify-content-center">
       <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
     <h6 class="card-level"> <br><br>
+      <p class="lead-3">- Software Engineering Intern at <br>Life Choices Studio <span style="color: green; font-style: italic; font-size: small;">current</span><br><br>
+      <span style="color: grey;">Work experience training in <br>Software Engineering</span>
+      </p>
+    </h6><br><br><br><br>
+  </div> 
+  
+  <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
+    <h6 class="card-level"> <br><br>
       <p class="lead-3">- Soccer Coach Assistant <br><br><span style="color: grey;">June 2022- Nov 2022</span></p>
     </h6><br><br>
 
   <br><br><br>
-
-  </div>
-
-      <div class="card-body justify-content-start d-flex" style="padding-left: 8%;">
-    <h6 class="card-level"> <br><br>
-      <p class="lead-3">- Software Engineering Intern at Life Choices Studio <span style="color: green; font-style: italic; font-size: small;">current</span><br><br>
-      <span style="color: grey;">Work experience training in Software Engineering</span>
-      </p>
-    </h6><br><br>
-
-  <br><br><br>
-
   </div>
     </div>
   </div>
@@ -91,18 +91,13 @@
     </div>
     
   <div class="row d-flex justify-content-center" v-if="skills">
-  <div class="card" style="width: 200px; height: 300px;"  v-for="skill in skills" :key="skill.id" >
+  <div class="card" style="width: 200px; height: 280px;"  v-for="skill in skills" :key="skill.id" >
 
   <img :src="skill.image" class="card-img-top d-flex justify-content-center img-fluid" alt="skill image" loading="lazy" style="margin-right: 100px;">
   <div class="card-body">
     <h3 class="card-title">
       <p class="lead">{{ skill.language }}</p>
     </h3>
-
-    <h6 class="card-level">
-      <p class="lead-3">"Novice"</p>
-  </h6>
-
 
   </div>
 </div>
@@ -188,6 +183,7 @@ img[alt="skill image"] {
   height: 400px;
   width: 400px;
   background-color: white;
+  border-color: #00A6A6;
 }
 
 img[alt="skill image"] {
