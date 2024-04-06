@@ -54,7 +54,7 @@ export default {
   color: white;
 
   &:hover {
-    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.5); /* Orange hue box shadow */
+    box-shadow: 0 4px 10px #468189; /* Orange hue box shadow */
   }
 }
 
