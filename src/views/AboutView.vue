@@ -27,8 +27,8 @@
           </div>
     </div>
     <div class="justify-content-center">
-      <button>
-        <a href="hhttps://docs.google.com/document/d/1CXAmhHSl0oUZMmWvDhoenXiwUTdrtF0DTGD0YjsoaSY/edit?usp=sharing" class="yes" target="_blank" style="text-decoration: none; color: black;">
+      <button class="cv">
+        <a href="https://drive.google.com/file/d/176oxlVfndxuazkbxxn1w8f8xdz6yndN_/view?usp=sharing" class="yes" target="_blank" style="text-decoration: none; color: inherit;">
 		Download CV</a>
       </button>
     </div>
@@ -70,10 +70,25 @@ img[alt="me"] {
   box-shadow: 2px 2px 2px #84A59D ;
 }
 
-/* #about {
-  display: flex !important;
-  justify-content: center !important;
-  flex-wrap: wrap !important;
-} */
+.cv{
+  text-align: center;
+}
+
+.cv {
+  background-color: #ffffff;
+  border: 2px solid #0d7979;
+  color: #0d7979;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cv:hover {
+        background-color: #0d8c8c;
+        color: #ffffff;
+    }
 
 </style>

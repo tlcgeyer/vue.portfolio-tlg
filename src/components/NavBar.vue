@@ -29,8 +29,8 @@
                 <router-link to="/testimonials" class="nav-link">Testimonials</router-link>
               </li>
               <li class="nav-item">
-                <button type="button" style="background-color: #00A6A6; border-radius: 30px; padding: 2px; border-color:white;">
-                  <router-link to="/reachMe" class="nav-link" style="color: white;">Contact me</router-link>
+                <button type="button" class="contact">
+                  <router-link to="/reachMe" class="nav-link"  style="text-decoration: none; color: inherit;">Contact me</router-link>
                 </button>
               </li>
             </ul>
@@ -113,6 +113,24 @@
     transition: background-color 0.3s; 
   }
   
-  
-  
+  .contact {
+    text-align: center;
+  }
+
+.contact{
+  background-color: #00A6A6;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
   </style>

@@ -20,7 +20,7 @@
               </div>
               <br> <br>
 
-              <button type="submit" class="d-flex justify-content-left" id="button-2">Submit</button>
+              <button type="submit" class="d-flex justify-content-left" id="submit">Submit</button>
               
               </form><br><br>
               
@@ -119,15 +119,6 @@ textarea {
 
 }
 
-#button-2 {
-    color: white;
-    background-color: #00A6A6;
-    border-color: #00A6A6;
-    border-radius: 13px;
-    size: 50px;
-    padding: 10px 20px;
-}
-
 @media (max-width: 768px) {
   .submit-form {
     max-width: 80%;
@@ -162,5 +153,30 @@ textarea {
 .lighter-1 {
     font-size: small;
 }
+
+
+#submit {
+    text-align: center;
+}
+
+#submit{
+  background-color: #00A6A6;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+#submit:hover {
+    box-shadow: 0px 4px 8px #00A6A6; /* Add box shadow */
+}
+
 
 </style>
